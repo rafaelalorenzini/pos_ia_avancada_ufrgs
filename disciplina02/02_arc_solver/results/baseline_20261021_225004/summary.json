@@ -1,0 +1,94 @@
+{
+  "label": "baseline",
+  "tasks_file": "tasks.txt",
+  "provider": "google",
+  "model": "gemini-3.5-flash-lite",
+  "reasoning_level": "high",
+  "started": "2026-10-21T22:50:04",
+  "finished": "2026-10-21T22:53:23",
+  "tasks": 5,
+  "solved": 2,
+  "accuracy": 0.4,
+  "total_tokens": {
+    "input": 13015,
+    "reasoning": 61652,
+    "answer": 3583
+  },
+  "results": [
+    {
+      "task_id": "007bbfb7",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "rule_summary": "Expand each cell of the 3x3 input grid into a 3x3 block in a 9x9 output grid: if the input cell is non-zero, replace it with a full copy of the input grid; if the input cell is zero, replace it with an all-zero block.",
+      "tokens": {
+        "input": 1111,
+        "reasoning": 5424,
+        "answer": 349
+      },
+      "seconds": 13.7,
+      "error": null
+    },
+    {
+      "task_id": "00d62c1b",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "rule_summary": "Fill the interior (enclosed regions of background color 0) of shapes made of color 3 with color 4.",
+      "tokens": {
+        "input": 3937,
+        "reasoning": 14064,
+        "answer": 1243
+      },
+      "seconds": 34.0,
+      "error": null
+    },
+    {
+      "task_id": "017c7c7b",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "rule_summary": "Split the 6-row input into two 3-row blocks, then construct the 9-row output by repeating the blocks in the order: block 1, block 2, block 1, while changing all color 1 to color 2.",
+      "tokens": {
+        "input": 475,
+        "reasoning": 3425,
+        "answer": 181
+      },
+      "seconds": 8.7,
+      "error": null
+    },
+    {
+      "task_id": "025d127b",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "rule_summary": "Shift the left and right boundaries of each row of the hollow shape to the right by 1 column, except for the bottom row which remains unchanged.",
+      "tokens": {
+        "input": 1149,
+        "reasoning": 14853,
+        "answer": 375
+      },
+      "seconds": 35.6,
+      "error": null
+    },
+    {
+      "task_id": "045e512c",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "rule_summary": "A 3x3 template shape (defined by color 8) is replicated based on the dimensions of input line segments: a vertical line of length N produces N horizontal copies of the template shape, and a horizontal line of length N produces N vertical copies of the template shape, each separated by single-pixel spacing.",
+      "tokens": {
+        "input": 6343,
+        "reasoning": 23886,
+        "answer": 1435
+      },
+      "seconds": 67.5,
+      "error": null
+    }
+  ]
+}

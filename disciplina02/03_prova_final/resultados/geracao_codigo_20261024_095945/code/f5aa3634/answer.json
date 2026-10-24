@@ -1,0 +1,41 @@
+{
+  "test_outputs": [
+    [
+      [
+        5,
+        5,
+        5
+      ],
+      [
+        5,
+        9,
+        5
+      ],
+      [
+        0,
+        9,
+        0
+      ]
+    ]
+  ],
+  "task_id": "f5aa3634",
+  "set": "evaluation",
+  "correct": false,
+  "tests_correct": [
+    false
+  ],
+  "tokens": {
+    "input": 1824,
+    "reasoning": 21829,
+    "output": 704
+  },
+  "seconds": 63.5,
+  "error": null,
+  "train_correct": [
+    false,
+    true,
+    true
+  ],
+  "train_all_correct": false,
+  "run_errors": []
+}

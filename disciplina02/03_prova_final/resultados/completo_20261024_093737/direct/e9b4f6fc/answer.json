@@ -1,0 +1,62 @@
+{
+  "rule_summary": "Extract the framed rectangular region and replace colors inside it based on the horizontal pairs of numbers located outside the region, where the second number in each pair is replaced by the first number.",
+  "test_outputs": [
+    [
+      [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        4,
+        4,
+        1
+      ],
+      [
+        1,
+        6,
+        6,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        6,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  ],
+  "task_id": "e9b4f6fc",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2133,
+    "reasoning": 8155,
+    "output": 143
+  },
+  "seconds": 21.2,
+  "error": null
+}

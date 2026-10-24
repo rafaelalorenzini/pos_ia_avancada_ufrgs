@@ -1,0 +1,17 @@
+{
+ "rule_summary": "Compare the left and right halves of the grid (shifting right column indices by -11). Objects that remain stationary keep their original color at their position. Objects that move leave color 2 at their start position (in the left grid) and color 1 at their end position (in the right grid).",
+ "test_outputs": [
+  [
+   [0, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+   [0, 2, 1, 0, 0, 0, 1, 0, 0, 0],
+   [0, 0, 0, 2, 1, 0, 0, 2, 1, 0],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 9, 0, 0, 2, 0, 0, 0],
+   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+   [0, 2, 1, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 0, 7, 0, 0, 2, 1, 0],
+   [0, 2, 1, 0, 0, 0, 0, 0, 0, 0]
+  ]
+ ]
+}

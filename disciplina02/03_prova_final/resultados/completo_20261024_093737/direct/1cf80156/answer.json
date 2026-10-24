@@ -1,0 +1,52 @@
+{
+  "rule_summary": "Extract the bounding box that contains all the non-zero cells in the input grid.",
+  "test_outputs": [
+    [
+      [
+        0,
+        0,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        0,
+        0
+      ]
+    ]
+  ],
+  "task_id": "1cf80156",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1345,
+    "reasoning": 3213,
+    "output": 107
+  },
+  "seconds": 12.2,
+  "error": null
+}

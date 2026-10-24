@@ -1,0 +1,42 @@
+{
+  "test_outputs": [
+    [
+      [
+        5,
+        3,
+        5
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        5,
+        3,
+        5
+      ]
+    ]
+  ],
+  "task_id": "9565186b",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 382,
+    "reasoning": 2417,
+    "output": 104
+  },
+  "seconds": 12.1,
+  "error": null,
+  "train_correct": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "train_all_correct": true,
+  "run_errors": []
+}

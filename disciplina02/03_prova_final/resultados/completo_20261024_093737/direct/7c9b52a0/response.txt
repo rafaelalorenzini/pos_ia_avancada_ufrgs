@@ -1,0 +1,12 @@
+{
+ "rule_summary": "The input grid is divided into four quadrants (top-left, top-right, bottom-left, bottom-right). Each quadrant contains a subgrid object with a non-background color. The transformation extracts each object subgrid relative to its quadrant and superimposes them into a single consolidated output grid.",
+ "test_outputs": [
+  [
+   [0, 2, 3],
+   [2, 2, 3],
+   [4, 4, 4],
+   [6, 4, 0],
+   [6, 6, 0]
+  ]
+ ]
+}

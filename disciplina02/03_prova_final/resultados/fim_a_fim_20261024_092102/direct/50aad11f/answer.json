@@ -1,0 +1,92 @@
+{
+  "rule_summary": "Extract all 4x4 magenta shapes from the input grid, recolor each shape according to its associated marker digit found elsewhere in the grid, and arrange them into a single grid (vertically if stacked, horizontally if side-by-side based on their relative coordinates).",
+  "test_outputs": [
+    [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        7,
+        7
+      ],
+      [
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        3,
+        0
+      ]
+    ]
+  ],
+  "task_id": "50aad11f",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1849,
+    "reasoning": 8323,
+    "output": 252
+  },
+  "seconds": 21.9,
+  "error": null
+}

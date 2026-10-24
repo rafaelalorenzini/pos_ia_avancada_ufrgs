@@ -1,0 +1,17 @@
+def transform(grid):
+    output = []
+    for r in range(len(grid)):
+        out_row = []
+        for c in range(10):
+            L = grid[r][c]
+            R = grid[r][c + 11]
+            if L == R:
+                out_row.append(L)
+            elif L != 0 and R == 0:
+                out_row.append(2)
+            elif L == 0 and R != 0:
+                out_row.append(1)
+            else:
+                out_row.append(L if L != 0 else R)
+        output.append(out_row)
+    return output

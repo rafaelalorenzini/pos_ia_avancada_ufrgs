@@ -1,0 +1,14 @@
+{
+ "rule_summary": "Identify the four colors positioned in the corners of the 7x7 grid of 1s (top-left, top-right, bottom-left, bottom-right). Extract the 3x3 shape corresponding to each color from the input grid and arrange them into a 2x2 quadrant layout in a 7x7 output grid, separated by a row and column of zeros.",
+ "test_outputs": [
+  [
+   [0, 2, 0, 0, 3, 3, 3],
+   [2, 2, 0, 0, 0, 3, 0],
+   [0, 0, 2, 0, 3, 3, 3],
+   [0, 0, 0, 0, 0, 0, 0],
+   [0, 8, 8, 0, 0, 6, 6],
+   [8, 8, 8, 0, 6, 6, 0],
+   [0, 0, 8, 0, 0, 6, 6]
+  ]
+ ]
+}

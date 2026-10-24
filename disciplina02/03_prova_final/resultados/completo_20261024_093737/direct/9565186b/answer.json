@@ -1,0 +1,35 @@
+{
+  "rule_summary": "Identify the most frequent color in the input grid, keep all pixels of that color unchanged, and replace all pixels of any other color with 5.",
+  "test_outputs": [
+    [
+      [
+        5,
+        3,
+        5
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        5,
+        3,
+        5
+      ]
+    ]
+  ],
+  "task_id": "9565186b",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 347,
+    "reasoning": 3422,
+    "output": 88
+  },
+  "seconds": 12.7,
+  "error": null
+}

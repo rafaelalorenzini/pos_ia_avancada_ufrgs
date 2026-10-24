@@ -1,0 +1,23 @@
+def transform(grid):
+    blocks = []
+    visited = set()
+    for r in range(len(grid)):
+        for c in range(len(grid[0])):
+            if grid[r][c] != 0 and (r, c) not in visited:
+                if r + 2 < len(grid) and c + 2 < len(grid[0]):
+                    subgrid = [
+                        [grid[r+i][c+j] for j in range(3)]
+                        for i in range(3)
+                    ]
+                    if all(subgrid[i][j] != 0 for i in range(3) for j in range(3)):
+                        blocks.append(subgrid)
+                        for i in range(3):
+                            for j in range(3):
+                                visited.add((r+i, c+j))
+                                
+    for block in blocks:
+        unique_colors = set(val for row in block for val in row)
+        if len(unique_colors) == 3:
+            return block
+            
+    return []

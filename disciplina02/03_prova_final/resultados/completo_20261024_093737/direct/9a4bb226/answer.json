@@ -1,0 +1,35 @@
+{
+  "rule_summary": "Identify the 3x3 object that contains three distinct colors instead of two, and output that object.",
+  "test_outputs": [
+    [
+      [
+        9,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ]
+  ],
+  "task_id": "9a4bb226",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2027,
+    "reasoning": 4305,
+    "output": 82
+  },
+  "seconds": 13.0,
+  "error": null
+}

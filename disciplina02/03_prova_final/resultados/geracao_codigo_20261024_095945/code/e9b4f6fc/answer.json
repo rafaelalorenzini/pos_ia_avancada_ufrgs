@@ -1,0 +1,69 @@
+{
+  "test_outputs": [
+    [
+      [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        4,
+        4,
+        1
+      ],
+      [
+        1,
+        6,
+        6,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        6,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  ],
+  "task_id": "e9b4f6fc",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2168,
+    "reasoning": 11097,
+    "output": 550
+  },
+  "seconds": 31.9,
+  "error": null,
+  "train_correct": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "train_all_correct": true,
+  "run_errors": []
+}

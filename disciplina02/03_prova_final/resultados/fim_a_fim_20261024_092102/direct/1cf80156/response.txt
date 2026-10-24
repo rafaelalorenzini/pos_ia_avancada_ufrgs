@@ -1,0 +1,11 @@
+{
+  "rule_summary": "Crop the input grid to the bounding box containing all non-zero pixels.",
+  "test_outputs": [
+    [
+      [0, 0, 6, 6, 6, 6],
+      [0, 0, 6, 0, 0, 0],
+      [6, 0, 6, 0, 0, 0],
+      [6, 6, 6, 6, 0, 0]
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+ "rule_summary": "Shift the left and right boundaries of each row of the hollow shape to the right by 1 column, except for the bottom row which remains unchanged.",
+ "test_outputs": [
+  [
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 4, 4, 4, 4, 4, 4, 0, 0],
+   [0, 0, 4, 0, 0, 0, 0, 4, 0, 0],
+   [0, 0, 0, 4, 0, 0, 0, 0, 4, 0],
+   [0, 0, 0, 0, 4, 0, 0, 0, 0, 4],
+   [0, 0, 0, 0, 4, 4, 4, 4, 4, 4],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ]
+ ]
+}

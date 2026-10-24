@@ -1,0 +1,83 @@
+{
+  "rule_summary": "For each 3-pixel L-shaped group of 8s, place a 1 in the missing corner to complete a 2x2 square.",
+  "test_outputs": [
+    [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        8
+      ],
+      [
+        8,
+        8,
+        0,
+        0,
+        0,
+        1,
+        8
+      ],
+      [
+        8,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        8,
+        0,
+        0
+      ],
+      [
+        1,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "task_id": "3aa6fb7a",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 651,
+    "reasoning": 4717,
+    "output": 285
+  },
+  "seconds": 39.5,
+  "error": null
+}

@@ -1,0 +1,118 @@
+{
+  "rule_summary": "Expand each cell of the 3x3 input grid into a 3x3 block in a 9x9 output grid: if the input cell is non-zero, replace it with a full copy of the input grid; if the input cell is zero, replace it with an all-zero block.",
+  "test_outputs": [
+    [
+      [
+        7,
+        0,
+        7,
+        0,
+        0,
+        0,
+        7,
+        0,
+        7
+      ],
+      [
+        7,
+        0,
+        7,
+        0,
+        0,
+        0,
+        7,
+        0,
+        7
+      ],
+      [
+        7,
+        7,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        0,
+        7,
+        0,
+        0,
+        0,
+        7,
+        0,
+        7
+      ],
+      [
+        7,
+        0,
+        7,
+        0,
+        0,
+        0,
+        7,
+        0,
+        7
+      ],
+      [
+        7,
+        7,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        0
+      ],
+      [
+        7,
+        0,
+        7,
+        7,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        7,
+        7,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0,
+        7,
+        7,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "task_id": "007bbfb7",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1111,
+    "reasoning": 5424,
+    "answer": 349
+  },
+  "seconds": 13.7,
+  "error": null
+}

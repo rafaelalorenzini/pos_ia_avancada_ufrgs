@@ -1,0 +1,7 @@
+import numpy as np
+
+def transform(grid):
+    arr = np.array(grid)
+    result = np.zeros_like(arr)
+    result[1:, :] = arr[:-1, :]
+    return result.tolist()

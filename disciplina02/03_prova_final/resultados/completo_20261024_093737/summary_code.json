@@ -1,0 +1,487 @@
+{
+  "approach": "code",
+  "approach_name": "code generation",
+  "provider": "google",
+  "model": "gemini-3.5-flash-lite",
+  "reasoning_level": "high",
+  "started": "2026-10-24T09:47:47",
+  "finished": "2026-10-24T09:58:06",
+  "tasks": 20,
+  "solved": 14,
+  "errors": 0,
+  "total_tokens": {
+    "input": 37936,
+    "reasoning": 209257,
+    "output": 9043
+  },
+  "total_seconds": 581.5,
+  "wall_clock_seconds": 619.5,
+  "train_all_correct": 14,
+  "train_correct_but_test_wrong": 0,
+  "timeout_seconds": 10,
+  "results": [
+    {
+      "task_id": "3aa6fb7a",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 684,
+        "reasoning": 4752,
+        "output": 505
+      },
+      "seconds": 18.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "44d8ac46",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2810,
+        "reasoning": 13458,
+        "output": 800
+      },
+      "seconds": 39.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "44f52bb0",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 404,
+        "reasoning": 9477,
+        "output": 135
+      },
+      "seconds": 24.0,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "007bbfb7",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1148,
+        "reasoning": 6541,
+        "output": 105
+      },
+      "seconds": 17.7,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "25ff71a9",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 404,
+        "reasoning": 1576,
+        "output": 56
+      },
+      "seconds": 8.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "0a938d79",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 4016,
+        "reasoning": 15159,
+        "output": 496
+      },
+      "seconds": 42.6,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "1cf80156",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1378,
+        "reasoning": 2827,
+        "output": 102
+      },
+      "seconds": 12.5,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "2013d3e2",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 830,
+        "reasoning": 6736,
+        "output": 131
+      },
+      "seconds": 21.4,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "32597951",
+      "set": "training",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 4252,
+        "reasoning": 16021,
+        "output": 433
+      },
+      "seconds": 46.6,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": []
+    },
+    {
+      "task_id": "9565186b",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 380,
+        "reasoning": 2216,
+        "output": 158
+      },
+      "seconds": 10.2,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "9a4bb226",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2060,
+        "reasoning": 6231,
+        "output": 249
+      },
+      "seconds": 19.0,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "aab50785",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2770,
+        "reasoning": 8999,
+        "output": 228
+      },
+      "seconds": 25.7,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "d47aa2ff",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2486,
+        "reasoning": 10516,
+        "output": 165
+      },
+      "seconds": 24.5,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "f5aa3634",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 1822,
+        "reasoning": 19357,
+        "output": 621
+      },
+      "seconds": 49.5,
+      "error": null,
+      "train_correct": [
+        true,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": []
+    },
+    {
+      "task_id": "93b4f4b3",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1362,
+        "reasoning": 14310,
+        "output": 1371
+      },
+      "seconds": 38.9,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "e9b4f6fc",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 2166,
+        "reasoning": 12763,
+        "output": 760
+      },
+      "seconds": 32.6,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": [
+        "train 4: TypeError: cannot unpack non-iterable NoneType object",
+        "test 1: TypeError: cannot unpack non-iterable NoneType object"
+      ]
+    },
+    {
+      "task_id": "7c9b52a0",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 2350,
+        "reasoning": 21808,
+        "output": 761
+      },
+      "seconds": 54.1,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": [
+        "train 1: ModuleNotFoundError: No module named 'scipy'",
+        "train 2: ModuleNotFoundError: No module named 'scipy'",
+        "train 3: ModuleNotFoundError: No module named 'scipy'",
+        "test 1: ModuleNotFoundError: No module named 'scipy'"
+      ]
+    },
+    {
+      "task_id": "c658a4bd",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2056,
+        "reasoning": 12768,
+        "output": 454
+      },
+      "seconds": 31.9,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "50aad11f",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 1882,
+        "reasoning": 13966,
+        "output": 824
+      },
+      "seconds": 39.9,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": [
+        "train 1: ModuleNotFoundError: No module named 'scipy'",
+        "train 2: ModuleNotFoundError: No module named 'scipy'",
+        "train 3: ModuleNotFoundError: No module named 'scipy'",
+        "test 1: ModuleNotFoundError: No module named 'scipy'"
+      ]
+    },
+    {
+      "task_id": "7d18a6fb",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 2676,
+        "reasoning": 9776,
+        "output": 689
+      },
+      "seconds": 25.1,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": []
+    }
+  ]
+}

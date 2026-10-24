@@ -1,0 +1,10 @@
+{
+ "rule_summary": "Identify the most frequent color in the input grid, keep all pixels of that color unchanged, and replace all pixels of any other color with 5.",
+ "test_outputs": [
+  [
+   [5, 3, 5],
+   [3, 3, 5],
+   [5, 3, 5]
+  ]
+ ]
+}

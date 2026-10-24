@@ -1,0 +1,14 @@
+{
+  "rule_summary": "Identify the 4 marker colors inside the 7x7 blue frame to determine which 4 shapes to extract from the input grid. Assemble these 4 shapes into a 7x7 output grid corresponding to the four quadrants (top-left, top-right, bottom-left, bottom-right), separated by a row and column of zeros.",
+  "test_outputs": [
+    [
+      [0, 2, 0, 0, 3, 3, 3],
+      [2, 2, 0, 0, 0, 3, 0],
+      [0, 0, 2, 0, 3, 3, 3],
+      [0, 0, 0, 0, 0, 0, 0],
+      [0, 8, 8, 0, 0, 6, 6],
+      [8, 8, 8, 0, 6, 6, 0],
+      [0, 0, 8, 0, 0, 6, 6]
+    ]
+  ]
+}

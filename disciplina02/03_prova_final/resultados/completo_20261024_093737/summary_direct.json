@@ -1,0 +1,323 @@
+{
+  "approach": "direct",
+  "approach_name": "end to end",
+  "provider": "google",
+  "model": "gemini-3.5-flash-lite",
+  "reasoning_level": "high",
+  "started": "2026-10-24T09:37:37",
+  "finished": "2026-10-24T09:47:45",
+  "tasks": 20,
+  "solved": 17,
+  "errors": 0,
+  "total_tokens": {
+    "input": 37276,
+    "reasoning": 198615,
+    "output": 5903
+  },
+  "total_seconds": 570.0,
+  "wall_clock_seconds": 608.0,
+  "results": [
+    {
+      "task_id": "3aa6fb7a",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 651,
+        "reasoning": 4717,
+        "output": 285
+      },
+      "seconds": 39.5,
+      "error": null
+    },
+    {
+      "task_id": "44d8ac46",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2777,
+        "reasoning": 14231,
+        "output": 538
+      },
+      "seconds": 37.7,
+      "error": null
+    },
+    {
+      "task_id": "44f52bb0",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 371,
+        "reasoning": 5964,
+        "output": 76
+      },
+      "seconds": 19.4,
+      "error": null
+    },
+    {
+      "task_id": "007bbfb7",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1115,
+        "reasoning": 5411,
+        "output": 355
+      },
+      "seconds": 16.9,
+      "error": null
+    },
+    {
+      "task_id": "25ff71a9",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 371,
+        "reasoning": 973,
+        "output": 83
+      },
+      "seconds": 7.3,
+      "error": null
+    },
+    {
+      "task_id": "0a938d79",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 3983,
+        "reasoning": 10316,
+        "output": 985
+      },
+      "seconds": 31.5,
+      "error": null
+    },
+    {
+      "task_id": "1cf80156",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1345,
+        "reasoning": 3213,
+        "output": 107
+      },
+      "seconds": 12.2,
+      "error": null
+    },
+    {
+      "task_id": "2013d3e2",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 797,
+        "reasoning": 5743,
+        "output": 92
+      },
+      "seconds": 18.5,
+      "error": null
+    },
+    {
+      "task_id": "32597951",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 4219,
+        "reasoning": 16880,
+        "output": 957
+      },
+      "seconds": 45.1,
+      "error": null
+    },
+    {
+      "task_id": "9565186b",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 347,
+        "reasoning": 3422,
+        "output": 88
+      },
+      "seconds": 12.7,
+      "error": null
+    },
+    {
+      "task_id": "9a4bb226",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2027,
+        "reasoning": 4305,
+        "output": 82
+      },
+      "seconds": 13.0,
+      "error": null
+    },
+    {
+      "task_id": "aab50785",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2737,
+        "reasoning": 9512,
+        "output": 190
+      },
+      "seconds": 25.2,
+      "error": null
+    },
+    {
+      "task_id": "d47aa2ff",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 2453,
+        "reasoning": 16384,
+        "output": 408
+      },
+      "seconds": 43.3,
+      "error": null
+    },
+    {
+      "task_id": "f5aa3634",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 1789,
+        "reasoning": 24759,
+        "output": 63
+      },
+      "seconds": 59.9,
+      "error": null
+    },
+    {
+      "task_id": "93b4f4b3",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1329,
+        "reasoning": 10861,
+        "output": 471
+      },
+      "seconds": 25.5,
+      "error": null
+    },
+    {
+      "task_id": "e9b4f6fc",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2133,
+        "reasoning": 8155,
+        "output": 143
+      },
+      "seconds": 21.2,
+      "error": null
+    },
+    {
+      "task_id": "7c9b52a0",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2317,
+        "reasoning": 22174,
+        "output": 142
+      },
+      "seconds": 57.5,
+      "error": null
+    },
+    {
+      "task_id": "c658a4bd",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 2023,
+        "reasoning": 11732,
+        "output": 349
+      },
+      "seconds": 29.0,
+      "error": null
+    },
+    {
+      "task_id": "50aad11f",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1849,
+        "reasoning": 10724,
+        "output": 223
+      },
+      "seconds": 28.2,
+      "error": null
+    },
+    {
+      "task_id": "7d18a6fb",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2643,
+        "reasoning": 9139,
+        "output": 266
+      },
+      "seconds": 26.4,
+      "error": null
+    }
+  ]
+}

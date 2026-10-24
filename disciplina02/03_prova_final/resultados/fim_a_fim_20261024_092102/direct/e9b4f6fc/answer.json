@@ -1,0 +1,62 @@
+{
+  "rule_summary": "Extract the rectangular block from the input grid and replace its internal colors using the floating pairs outside the block as substitution rules (format A B means color B becomes color A). Unchanged colors remain as they are.",
+  "test_outputs": [
+    [
+      [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        4,
+        4,
+        1
+      ],
+      [
+        1,
+        6,
+        6,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        6,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  ],
+  "task_id": "e9b4f6fc",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2133,
+    "reasoning": 6503,
+    "output": 172
+  },
+  "seconds": 20.2,
+  "error": null
+}

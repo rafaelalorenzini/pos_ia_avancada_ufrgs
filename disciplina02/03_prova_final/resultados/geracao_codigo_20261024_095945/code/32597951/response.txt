@@ -1,0 +1,33 @@
+An analysis of the training examples reveals the following transformation rule:
+
+1. Only cells with a color of `1` are affected; all other colors (like `0` or `8`) remain unchanged.
+2. A cell of color `1` changes to color `3` if and only if it has **at least 2** neighboring cells (in its 8-connected neighborhood, including diagonals) that have the color `8`. Otherwise, it remains `1`.
+
+Here is the complete Python solution implementing this rule:
+
+```python
+import numpy as np
+
+def transform(grid):
+    arr = np.array(grid)
+    h, w = arr.shape
+    output = arr.copy()
+    
+    for r in range(h):
+        for c in range(w):
+            if arr[r, c] == 1:
+                # Count 8-connected neighbors that are equal to 8
+                count = 0
+                for dr in [-1, 0, 1]:
+                    for dc in [-1, 0, 1]:
+                        if dr == 0 and dc == 0:
+                            continue
+                        nr, nc = r + dr, c + dc
+                        if 0 <= nr < h and 0 <= nc < w:
+                            if arr[nr, nc] == 8:
+                                count += 1
+                if count >= 2:
+                    output[r, c] = 3
+                    
+    return output.tolist()
+```

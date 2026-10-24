@@ -1,0 +1,73 @@
+You are solving an ARC-AGI puzzle.
+Each grid is a matrix of integers from 0 to 9; each number is a color.
+Study the training examples and find the single transformation rule that
+turns every input into its output.
+
+## Training example 1
+Input:
+2 0 2
+0 2 0
+2 0 2
+Output:
+1
+
+## Training example 2
+Input:
+2 0 0
+2 0 0
+0 2 0
+Output:
+7
+
+## Training example 3
+Input:
+2 0 2
+2 0 2
+2 0 2
+Output:
+1
+
+## Training example 4
+Input:
+0 0 0
+2 0 2
+0 0 0
+Output:
+1
+
+## Training example 5
+Input:
+2 2 0
+0 2 2
+0 0 0
+Output:
+7
+
+## Training example 6
+Input:
+2 2 0
+0 2 0
+0 0 0
+Output:
+7
+
+## Test input 1
+2 0 2
+2 2 2
+2 0 2
+
+## Test input 2
+0 0 0
+2 0 0
+2 0 0
+
+## Task
+Write a Python function transform(grid) that implements the rule.
+It receives one input grid (a list of rows; each row is a list of integers)
+and must return the output grid in the same format.
+It must work for every training example and for the test input(s).
+You may use the standard library, numpy and scipy. Do not read files or print.
+
+## Answer format
+Reply with a single ```python code block containing the function
+(plus any imports and helpers it needs), and nothing else.

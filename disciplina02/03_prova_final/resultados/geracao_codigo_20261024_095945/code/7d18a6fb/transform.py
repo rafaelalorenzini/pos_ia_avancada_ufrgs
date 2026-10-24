@@ -1,0 +1,42 @@
+import numpy as np
+
+def transform(grid):
+    grid = np.array(grid)
+    H, W = grid.shape
+    
+    # Find the 7x7 frame made of color 1
+    frame_r, frame_c = 0, 0
+    max_ones = -1
+    for r in range(H - 6):
+        for c in range(W - 6):
+            ones = np.sum(grid[r:r+7, c:c+7] == 1)
+            if ones > max_ones:
+                max_ones = ones
+                frame_r, frame_c = r, c
+                
+    # Read the four marker colors from inside the frame
+    c_tl = grid[frame_r + 1, frame_c + 1]
+    c_tr = grid[frame_r + 1, frame_c + 5]
+    c_bl = grid[frame_r + 5, frame_c + 1]
+    c_br = grid[frame_r + 5, frame_c + 5]
+    
+    # Create a masked grid excluding the frame
+    masked_grid = grid.copy()
+    masked_grid[frame_r:frame_r+7, frame_c:frame_c+7] = 0
+    
+    def get_shape(C):
+        rows, cols = np.where(masked_grid == C)
+        if len(rows) == 0:
+            return np.zeros((3, 3), dtype=int)
+        min_r = np.min(rows)
+        min_c = np.min(cols)
+        return grid[min_r:min_r+3, min_c:min_c+3]
+        
+    # Construct the 7x7 output grid with 3x3 shapes and zero-filled gaps
+    out = np.zeros((7, 7), dtype=int)
+    out[0:3, 0:3] = get_shape(c_tl)
+    out[0:3, 4:7] = get_shape(c_tr)
+    out[4:7, 0:3] = get_shape(c_bl)
+    out[4:7, 4:7] = get_shape(c_br)
+    
+    return out.tolist()

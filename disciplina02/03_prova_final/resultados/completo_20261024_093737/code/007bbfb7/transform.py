@@ -1,0 +1,10 @@
+import numpy as np
+
+def transform(grid):
+    grid = np.array(grid)
+    out = np.zeros((9, 9), dtype=int)
+    for r in range(3):
+        for c in range(3):
+            if grid[r, c] != 0:
+                out[r*3:(r+1)*3, c*3:(c+1)*3] = grid
+    return out.tolist()

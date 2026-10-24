@@ -1,0 +1,19 @@
+```python
+from collections import Counter
+
+def transform(grid):
+    # Flatten the grid to count color frequencies
+    flat_grid = [color for row in grid for color in row]
+    counts = Counter(flat_grid)
+    
+    # Find the most frequent color (background)
+    most_common_color, _ = counts.most_common(1)[0]
+    
+    # Construct the output grid: keep the most frequent color, replace others with 5
+    output = []
+    for row in grid:
+        new_row = [color if color == most_common_color else 5 for color in row]
+        output.append(new_row)
+        
+    return output
+```

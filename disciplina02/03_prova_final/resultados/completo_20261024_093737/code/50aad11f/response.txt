@@ -1,0 +1,73 @@
+```python
+import numpy as np
+from scipy.ndimage import label
+
+def transform(grid):
+    grid = np.array(grid)
+    # Find all connected components of color 6
+    mask_6 = (grid == 6)
+    labeled_6, num_features = label(mask_6)
+    
+    groups = []
+    
+    # Find all marker pixels (non-zero, non-6)
+    markers = []
+    for r in range(grid.shape[0]):
+        for c in range(grid.shape[1]):
+            val = grid[r, c]
+            if val != 0 and val != 6:
+                markers.append((r, c, val))
+                
+    for i in range(1, num_features + 1):
+        comp_mask = (labeled_6 == i)
+        r_indices, c_indices = np.where(comp_mask)
+        min_r, max_r = r_indices.min(), r_indices.max()
+        min_c, max_c = c_indices.min(), c_indices.max()
+        
+        # Find the closest marker to this component
+        best_marker_val = 0
+        min_dist = float('inf')
+        for mr, mc, mval in markers:
+            dr = max(0, min_r - mr, mr - max_r)
+            dc = max(0, min_c - mc, mc - max_c)
+            dist = dr * dr + dc * dc
+            if dist < min_dist:
+                min_dist = dist
+                best_marker_val = mval
+                
+        groups.append({
+            'min_r': min_r,
+            'min_c': min_c,
+            'marker': best_marker_val
+        })
+        
+    # Determine layout
+    min_rows = [g['min_r'] for g in groups]
+    min_cols = [g['min_c'] for g in groups]
+    
+    dr = max(min_rows) - min(min_rows) if min_rows else 0
+    dc = max(min_cols) - min(min_cols) if min_cols else 0
+    
+    if dr > dc:
+        # Vertical layout
+        groups.sort(key=lambda x: x['min_r'])
+        out_h = 4 * len(groups)
+        out_w = 4
+        output = np.zeros((out_h, out_w), dtype=int)
+        for idx, g in enumerate(groups):
+            sub = grid[g['min_r']:g['min_r']+4, g['min_c']:g['min_c']+4].copy()
+            sub[sub == 6] = g['marker']
+            output[idx*4:(idx+1)*4, 0:4] = sub
+    else:
+        # Horizontal layout
+        groups.sort(key=lambda x: x['min_c'])
+        out_h = 4
+        out_w = 4 * len(groups)
+        output = np.zeros((out_h, out_w), dtype=int)
+        for idx, g in enumerate(groups):
+            sub = grid[g['min_r']:g['min_r']+4, g['min_c']:g['min_c']+4].copy()
+            sub[sub == 6] = g['marker']
+            output[0:4, idx*4:(idx+1)*4] = sub
+            
+    return output.tolist()
+```

@@ -1,0 +1,474 @@
+{
+  "approach": "code",
+  "approach_name": "code generation",
+  "provider": "google",
+  "model": "gemini-3.5-flash-lite",
+  "reasoning_level": "high",
+  "started": "2026-10-24T09:59:45",
+  "finished": "2026-10-24T10:10:34",
+  "tasks": 20,
+  "solved": 18,
+  "errors": 0,
+  "total_tokens": {
+    "input": 37976,
+    "reasoning": 202445,
+    "output": 7284
+  },
+  "total_seconds": 611.2,
+  "wall_clock_seconds": 649.3,
+  "train_all_correct": 18,
+  "train_correct_but_test_wrong": 0,
+  "timeout_seconds": 10,
+  "results": [
+    {
+      "task_id": "3aa6fb7a",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 686,
+        "reasoning": 4602,
+        "output": 235
+      },
+      "seconds": 13.6,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "44d8ac46",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2812,
+        "reasoning": 13670,
+        "output": 450
+      },
+      "seconds": 36.0,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "44f52bb0",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 406,
+        "reasoning": 6822,
+        "output": 93
+      },
+      "seconds": 17.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "007bbfb7",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1150,
+        "reasoning": 4199,
+        "output": 106
+      },
+      "seconds": 11.7,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "25ff71a9",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true,
+        true
+      ],
+      "tokens": {
+        "input": 406,
+        "reasoning": 2039,
+        "output": 76
+      },
+      "seconds": 6.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "0a938d79",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 4018,
+        "reasoning": 11768,
+        "output": 427
+      },
+      "seconds": 31.4,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "1cf80156",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1380,
+        "reasoning": 2581,
+        "output": 170
+      },
+      "seconds": 9.8,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "2013d3e2",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 832,
+        "reasoning": 2956,
+        "output": 208
+      },
+      "seconds": 9.6,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "32597951",
+      "set": "training",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 4254,
+        "reasoning": 20008,
+        "output": 327
+      },
+      "seconds": 56.6,
+      "error": null,
+      "train_correct": [
+        false,
+        false,
+        false
+      ],
+      "train_all_correct": false,
+      "run_errors": []
+    },
+    {
+      "task_id": "9565186b",
+      "set": "training",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 382,
+        "reasoning": 2417,
+        "output": 104
+      },
+      "seconds": 12.1,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "9a4bb226",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2062,
+        "reasoning": 3641,
+        "output": 122
+      },
+      "seconds": 15.6,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "aab50785",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2772,
+        "reasoning": 8630,
+        "output": 353
+      },
+      "seconds": 67.5,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "d47aa2ff",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2488,
+        "reasoning": 13383,
+        "output": 371
+      },
+      "seconds": 37.8,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "f5aa3634",
+      "set": "evaluation",
+      "correct": false,
+      "tests_correct": [
+        false
+      ],
+      "tokens": {
+        "input": 1824,
+        "reasoning": 21829,
+        "output": 704
+      },
+      "seconds": 63.5,
+      "error": null,
+      "train_correct": [
+        false,
+        true,
+        true
+      ],
+      "train_all_correct": false,
+      "run_errors": []
+    },
+    {
+      "task_id": "93b4f4b3",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1364,
+        "reasoning": 18372,
+        "output": 943
+      },
+      "seconds": 50.6,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "e9b4f6fc",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2168,
+        "reasoning": 11097,
+        "output": 550
+      },
+      "seconds": 31.9,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "7c9b52a0",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2352,
+        "reasoning": 14155,
+        "output": 289
+      },
+      "seconds": 37.5,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "c658a4bd",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2058,
+        "reasoning": 11972,
+        "output": 475
+      },
+      "seconds": 31.2,
+      "error": null,
+      "train_correct": [
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "50aad11f",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 1884,
+        "reasoning": 16510,
+        "output": 734
+      },
+      "seconds": 40.3,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    },
+    {
+      "task_id": "7d18a6fb",
+      "set": "evaluation",
+      "correct": true,
+      "tests_correct": [
+        true
+      ],
+      "tokens": {
+        "input": 2678,
+        "reasoning": 11794,
+        "output": 547
+      },
+      "seconds": 31.3,
+      "error": null,
+      "train_correct": [
+        true,
+        true,
+        true
+      ],
+      "train_all_correct": true,
+      "run_errors": []
+    }
+  ]
+}

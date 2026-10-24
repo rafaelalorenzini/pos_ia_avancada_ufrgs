@@ -1,0 +1,40 @@
+```python
+import numpy as np
+from collections import deque
+
+def transform(grid):
+    grid = np.array(grid)
+    R, C = grid.shape
+    
+    # Flood fill from the border to find all cells connected to the outside.
+    # Traversable cells are those that are NOT '8' (i.e. '0' or '1').
+    outside = np.zeros((R, C), dtype=bool)
+    queue = deque()
+    
+    # Add all border cells to queue if they are not 8
+    for r in range(R):
+        for c in range(C):
+            if (r == 0 or r == R - 1 or c == 0 or c == C - 1):
+                if grid[r, c] != 8:
+                    outside[r, c] = True
+                    queue.append((r, c))
+                    
+    # BFS for outside connectivity (4-connectivity)
+    while queue:
+        r, c = queue.popleft()
+        for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            nr, nc = r + dr, c + dc
+            if 0 <= nr < R and 0 <= nc < C:
+                if not outside[nr, nc] and grid[nr, nc] != 8:
+                    outside[nr, nc] = True
+                    queue.append((nr, nc))
+                    
+    # Transform: any '1' cell that is not connected to the outside (i.e. inside an enclosure) becomes '3'
+    output = grid.copy()
+    for r in range(R):
+        for c in range(C):
+            if grid[r, c] == 1 and not outside[r, c]:
+                output[r, c] = 3
+                
+    return output.tolist()
+```

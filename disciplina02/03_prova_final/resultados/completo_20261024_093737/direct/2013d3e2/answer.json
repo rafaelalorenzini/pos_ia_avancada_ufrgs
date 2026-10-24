@@ -1,0 +1,35 @@
+{
+  "rule_summary": "Extract the top-left 3x3 quadrant of the 6x6 centrally symmetric pattern formed by the non-zero cells in the input grid.",
+  "test_outputs": [
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        8,
+        8,
+        3
+      ]
+    ]
+  ],
+  "task_id": "2013d3e2",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 797,
+    "reasoning": 5743,
+    "output": 92
+  },
+  "seconds": 18.5,
+  "error": null
+}

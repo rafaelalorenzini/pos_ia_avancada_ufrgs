@@ -1,0 +1,119 @@
+{
+  "rule_summary": "Calculate the total area (pixel count) of each non-zero colored shape in the input. Sort the colors in descending order of area, and produce a concentric nested square grid where the outermost frame corresponds to the color with the largest area and the innermost region corresponds to the color with the smallest area.",
+  "test_outputs": [
+    [
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        8,
+        8,
+        8,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        4,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        2,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        4,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        8,
+        8,
+        8,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ]
+  ],
+  "task_id": "c658a4bd",
+  "set": "evaluation",
+  "correct": false,
+  "tests_correct": [
+    false
+  ],
+  "tokens": {
+    "input": 2023,
+    "reasoning": 11732,
+    "output": 349
+  },
+  "seconds": 29.0,
+  "error": null
+}

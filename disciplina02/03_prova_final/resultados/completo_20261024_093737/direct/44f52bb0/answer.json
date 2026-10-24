@@ -1,0 +1,29 @@
+{
+  "rule_summary": "Check whether the pattern of color 2 is symmetric (horizontally, vertically, or diagonally). Output 1 if it is symmetric, and 7 if it is asymmetric.",
+  "test_outputs": [
+    [
+      [
+        1
+      ]
+    ],
+    [
+      [
+        7
+      ]
+    ]
+  ],
+  "task_id": "44f52bb0",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true,
+    true
+  ],
+  "tokens": {
+    "input": 371,
+    "reasoning": 5964,
+    "output": 76
+  },
+  "seconds": 19.4,
+  "error": null
+}

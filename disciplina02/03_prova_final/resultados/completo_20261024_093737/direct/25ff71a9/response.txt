@@ -1,0 +1,4 @@
+```json
+{"rule_summary": "Shift all non-zero elements down by one row.",
+ "test_outputs": [[[0, 0, 0], [2, 0, 0], [2, 0, 0]], [[0, 0, 0], [0, 0, 0], [0, 1, 0]]]}
+```

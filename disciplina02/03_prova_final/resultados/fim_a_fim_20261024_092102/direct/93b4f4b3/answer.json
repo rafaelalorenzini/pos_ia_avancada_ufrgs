@@ -1,0 +1,139 @@
+{
+  "rule_summary": "Match each hole in the primary left-side frame to the corresponding colored shape on the right based on its exact shape and dimensions, then fill each hole with that matched color.",
+  "test_outputs": [
+    [
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        3,
+        3,
+        3,
+        8
+      ],
+      [
+        8,
+        8,
+        3,
+        8,
+        8
+      ],
+      [
+        8,
+        3,
+        3,
+        3,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        2,
+        2,
+        2,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        2,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        2,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        4,
+        8,
+        4,
+        8
+      ],
+      [
+        8,
+        4,
+        8,
+        4,
+        8
+      ],
+      [
+        8,
+        4,
+        4,
+        4,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        8,
+        7,
+        7,
+        8
+      ],
+      [
+        8,
+        7,
+        7,
+        7,
+        8
+      ],
+      [
+        8,
+        7,
+        7,
+        8,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    ]
+  ],
+  "task_id": "93b4f4b3",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1329,
+    "reasoning": 9554,
+    "output": 349
+  },
+  "seconds": 25.2,
+  "error": null
+}

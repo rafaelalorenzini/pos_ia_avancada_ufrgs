@@ -1,0 +1,16 @@
+{
+  "rule_summary": "Replace each cell of the 3x3 input grid with a 3x3 block; if the cell is non-zero, replace it with a copy of the entire input grid, otherwise replace it with a 3x3 block of zeros.",
+  "test_outputs": [
+    [
+      [7, 0, 7, 0, 0, 0, 7, 0, 7],
+      [7, 0, 7, 0, 0, 0, 7, 0, 7],
+      [7, 7, 0, 0, 0, 0, 7, 7, 0],
+      [7, 0, 7, 0, 0, 0, 7, 0, 7],
+      [7, 0, 7, 0, 0, 0, 7, 0, 7],
+      [7, 7, 0, 0, 0, 0, 7, 7, 0],
+      [7, 0, 7, 7, 0, 7, 0, 0, 0],
+      [7, 0, 7, 7, 0, 7, 0, 0, 0],
+      [7, 7, 0, 7, 7, 0, 0, 0, 0]
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "rule_summary": "Check whether the pattern of color 2 is symmetric (horizontally, vertically, or diagonally). Output 1 if it is symmetric, and 7 if it is asymmetric.",
+ "test_outputs": [
+  [
+   [1]
+  ],
+  [
+   [7]
+  ]
+ ]
+}

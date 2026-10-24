@@ -1,0 +1,4 @@
+```json
+{"rule_summary": "Find the most frequent color in the input grid, keep all cells of that color unchanged, and change all other cells to gray (color 5).",
+ "test_outputs": [[[5, 3, 5], [3, 3, 5], [5, 3, 5]]]}
+```

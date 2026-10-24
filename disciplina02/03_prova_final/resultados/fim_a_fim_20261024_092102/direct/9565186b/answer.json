@@ -1,0 +1,35 @@
+{
+  "rule_summary": "Find the most frequent color in the input grid, keep all cells of that color unchanged, and change all other cells to gray (color 5).",
+  "test_outputs": [
+    [
+      [
+        5,
+        3,
+        5
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        5,
+        3,
+        5
+      ]
+    ]
+  ],
+  "task_id": "9565186b",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 347,
+    "reasoning": 2567,
+    "output": 76
+  },
+  "seconds": 6.9,
+  "error": null
+}

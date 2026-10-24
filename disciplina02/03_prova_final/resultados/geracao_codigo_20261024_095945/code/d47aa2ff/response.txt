@@ -1,0 +1,42 @@
+```python
+def transform(grid):
+    H = len(grid)
+    W = len(grid[0])
+    mid = W // 2
+    
+    left = [row[:mid] for row in grid]
+    right = [row[mid+1:] for row in grid]
+    
+    output = [[0] * mid for _ in range(H)]
+    
+    colors = set()
+    for r in range(H):
+        for c in range(mid):
+            if left[r][c] != 0:
+                colors.add(left[r][c])
+            if right[r][c] != 0:
+                colors.add(right[r][c])
+                
+    for col_val in colors:
+        p_l = set()
+        p_r = set()
+        for r in range(H):
+            for c in range(mid):
+                if left[r][c] == col_val:
+                    p_l.add((r, c))
+                if right[r][c] == col_val:
+                    p_r.add((r, c))
+                    
+        intersection = p_l & p_r
+        only_l = p_l - p_r
+        only_r = p_r - p_l
+        
+        for r, c in intersection:
+            output[r][c] = col_val
+        for r, c in only_l:
+            output[r][c] = 2
+        for r, c in only_r:
+            output[r][c] = 1
+            
+    return output
+```

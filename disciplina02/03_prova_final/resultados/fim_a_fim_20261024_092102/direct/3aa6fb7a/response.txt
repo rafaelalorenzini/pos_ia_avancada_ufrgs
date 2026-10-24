@@ -1,0 +1,14 @@
+{
+  "rule_summary": "Identify all 2x2 L-shaped components of color 8 and place a color 1 pixel in the missing corner of each component's 2x2 bounding box.",
+  "test_outputs": [
+    [
+      [0, 0, 0, 0, 0, 8, 8],
+      [8, 8, 0, 0, 0, 1, 8],
+      [8, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 8, 1, 0, 0],
+      [0, 0, 0, 8, 8, 0, 0],
+      [1, 8, 0, 0, 0, 0, 0],
+      [8, 8, 0, 0, 0, 0, 0]
+    ]
+  ]
+}

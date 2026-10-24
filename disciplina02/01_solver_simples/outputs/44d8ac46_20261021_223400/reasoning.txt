@@ -1,0 +1,3 @@
+reasoning tokens: 7575
+output tokens:    486
+prompt tokens:    2773

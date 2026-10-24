@@ -1,0 +1,9 @@
+```json
+{
+  "rule_summary": "Check if the input grid has reflectional symmetry along its horizontal or vertical axes. If it is symmetric, the output is 1; otherwise, the output is 7.",
+  "test_outputs": [
+    [[1]],
+    [[7]]
+  ]
+}
+```

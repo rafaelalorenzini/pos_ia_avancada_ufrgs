@@ -1,0 +1,1 @@
+{"rule_summary": "Identify the target block indicated by the marker shapes on its left, extract it, and clear any marker pixels to background.", "test_outputs": [[[3, 8, 3], [3, 0, 3], [0, 0, 0]]]}

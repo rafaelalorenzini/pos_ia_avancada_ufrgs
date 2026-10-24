@@ -1,0 +1,51 @@
+import numpy as np
+from scipy.ndimage import label
+
+def transform(grid):
+    grid = np.array(grid)
+    # Find connected components of non-zero pixels
+    non_zero = (grid != 0)
+    labeled, num_features = label(non_zero)
+    
+    components = []
+    for i in range(1, num_features + 1):
+        comp_mask = (labeled == i)
+        coords = np.argwhere(comp_mask)
+        min_r, min_c = coords.min(axis=0)
+        max_r, max_c = coords.max(axis=0)
+        height = max_r - min_r + 1
+        width = max_c - min_c + 1
+        size = coords.shape[0]
+        components.append({
+            'size': size,
+            'bbox': (min_r, min_c, max_r, max_c),
+            'shape': (height, width),
+            'coords': coords
+        })
+        
+    # Sort components by size descending
+    components.sort(key=lambda x: x['size'], reverse=True)
+    
+    # The largest component is the target region
+    target = components[0]
+    min_r, min_c, max_r, max_c = target['bbox']
+    target_subgrid = grid[min_r:max_r+1, min_c:max_c+1]
+    
+    # The other components are 1x2 horizontal pairs [new, old]
+    mapping = {}
+    for comp in components[1:]:
+        if comp['size'] == 2 and comp['shape'] == (1, 2):
+            r, c1 = comp['coords'][0]
+            _, c2 = comp['coords'][1]
+            if c1 > c2:
+                c1, c2 = c2, c1
+            val_new = grid[r, c1]
+            val_old = grid[r, c2]
+            mapping[val_old] = val_new
+            
+    # Apply mapping to the target subgrid
+    output = target_subgrid.copy()
+    for old_val, new_val in mapping.items():
+        output[target_subgrid == old_val] = new_val
+        
+    return output.tolist()

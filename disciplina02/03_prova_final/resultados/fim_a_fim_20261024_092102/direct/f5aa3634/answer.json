@@ -1,0 +1,40 @@
+{
+  "rule_summary": "Identify the repeating multi-colored pattern/object that appears multiple times in the input grid and output that pattern as a grid.",
+  "test_outputs": [
+    [
+      [
+        3,
+        8,
+        3
+      ],
+      [
+        3,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ]
+    ]
+  ],
+  "task_id": "f5aa3634",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1789,
+    "reasoning": 11134,
+    "output": 79
+  },
+  "seconds": 31.9,
+  "error": null
+}

@@ -1,0 +1,45 @@
+{
+  "rule_summary": "Extract the sub-grid from each of the four quadrants (top-left, top-right, bottom-left, bottom-right) of the input grid and overlay them into a single output grid of the same dimensions.",
+  "test_outputs": [
+    [
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ]
+    ]
+  ],
+  "task_id": "7c9b52a0",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2317,
+    "reasoning": 11719,
+    "output": 128
+  },
+  "seconds": 25.4,
+  "error": null
+}

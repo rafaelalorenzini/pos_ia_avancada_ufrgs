@@ -1,0 +1,163 @@
+\documentclass{article}
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+
+\usepackage{ijcai26}
+\usepackage{times}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[brazilian]{babel}
+
+\urlstyle{same}
+
+% Portuguese abstract heading. The IJCAI style writes "Abstract" directly, so we
+% redefine it. Babel already translates "References".
+\renewenvironment{abstract}{\centerline{\Large\bf
+Resumo}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
+
+% Required by the IJCAI template. Leave this block untouched.
+\pdfinfo{
+/TemplateVersion (IJCAI.2026.0)
+}
+
+\title{Resolvendo o ARC-AGI-1 com LLMs: Fim a Fim e Geração de Código\\(Nível 2)}
+
+\author{
+    Rafaela Lorenzini
+    \affiliations
+    Especialização em Inteligência Artificial Avançada, UFRGS
+    \emails
+    rafaela.lorenzini@gmail.com
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    O ARC-AGI-1 exige inferir uma regra a partir de poucos pares de grades e aplicá-la a uma
+    entrada nova. Este trabalho compara duas formas de usar o Gemini 3.5 Flash Lite, com
+    raciocínio alto, em 20 tarefas do benchmark: na abordagem fim a fim, o modelo escreve a
+    grade de saída; na geração de código, ele escreve uma função Python executada pelo
+    computador. A geração de código resolveu 18 das 20 tarefas e a abordagem fim a fim, 17,
+    com custo de tokens e tempo semelhante. As duas abordagens erraram tarefas diferentes, o
+    que sugere que elas se complementam.
+\end{abstract}
+
+\section{Introdução}
+
+O ARC-AGI-1 avalia a capacidade de inferir regras abstratas a partir de poucos
+exemplos~\cite{chollet2019arXiv}. Cada tarefa traz de dois a cinco pares de grades de entrada
+e saída, com cores codificadas de 0 a 9, e uma ou mais entradas de teste. A resposta só conta
+como certa quando a grade inteira coincide com a esperada. Cada tarefa usa uma regra própria,
+como completar formas, contar objetos ou recortar uma região, e por isso não basta memorizar
+padrões: o modelo precisa formular uma hipótese e aplicá-la sem erro em cada célula.
+
+Neste trabalho, usamos o Gemini~\cite{geminiteam2025arXiv} de duas formas. Na abordagem
+\emph{fim a fim}, o modelo lê os exemplos e escreve a grade de teste. Na \emph{geração de
+código}, ele escreve um programa, e o computador executa esse programa. A segunda forma separa
+a descoberta da regra da sua aplicação e permite conferir o programa nos exemplos de treino.
+
+\section{Método}
+
+O solver foi escrito em Python e roda com o comando \texttt{uv run solver/main.py}. Ele lê a
+lista \texttt{tarefas.txt}, resolve cada tarefa nas duas abordagens e salva, para cada tarefa,
+o prompt, a resposta bruta do modelo e um arquivo com o resultado, os tokens e o tempo. Ao fim
+de cada abordagem, grava um resumo em JSON e em CSV. Há uma pausa de 2~s entre tarefas, e
+erros temporários da API (429 ou 5xx) são repetidos até três vezes.
+
+\paragraph{Prompt comum.} As duas abordagens começam pelo mesmo texto: uma instrução curta
+sobre o problema, os pares de treino e as entradas de teste. Cada grade aparece como linhas de
+números separados por espaço.
+
+\paragraph{Fim a fim.} O prompt pede um objeto JSON com um resumo da regra em uma ou duas
+frases e a lista de grades de saída, uma por entrada de teste. O solver extrai o JSON da
+resposta e compara cada grade com a esperada. Quando a tarefa tem uma única entrada de teste,
+o modelo às vezes envia a grade fora da lista; o solver aceita esse formato.
+
+\paragraph{Geração de código.} O prompt pede uma função \texttt{transform(grid)}, que recebe
+uma grade como lista de listas e devolve a grade de saída. O modelo pode usar a biblioteca
+padrão, o NumPy e o SciPy. O solver extrai o bloco de código da resposta e executa a função
+em um processo Python separado, com tempo limite de 10~s, em cada exemplo de treino e em cada
+entrada de teste. O programa conta como certo no treino quando reproduz todas as saídas
+conhecidas. A resposta ao teste é a saída do programa, mesmo quando ele erra o treino. Não há
+segunda tentativa: cada tarefa recebe uma única chamada ao modelo.
+
+\section{Experimentos}
+
+Usamos o Gemini 3.5 Flash Lite (\texttt{gemini-3.5-flash-lite}) pela API do Google, com nível
+de raciocínio alto nas duas abordagens. O conjunto tem as 20 tarefas do projeto: 10 do
+conjunto de treino e 10 do conjunto de avaliação do ARC-AGI-1. Os tokens de entrada medem o
+prompt; os de raciocínio, o texto que o modelo gera antes da resposta; e os de saída, a
+resposta final. O tempo soma, por tarefa, a chamada à API e, na geração de código, a execução
+do programa, sem as pausas entre tarefas. O solver foi construído com o Claude Code.
+
+\begin{table}[h]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    Abordagem   & Resolvidas & Entrada & Racioc. & Saída & Tempo (s) \\
+    \midrule
+    Fim a fim   & 17/20      & 37.276  & 198.615 & 5.903 & 570,0     \\
+    Código      & 18/20      & 37.976  & 202.445 & 7.284 & 611,2     \\
+    \bottomrule
+  \end{tabular}
+  \caption{Tarefas resolvidas, total de tokens e tempo por abordagem. Na geração de código,
+  o programa acertou todos os exemplos de treino em 18 tarefas.}
+  \label{tab:resultados}
+\end{table}
+
+\section{Resultados}
+
+A Tabela~\ref{tab:resultados} mostra que a geração de código resolveu uma tarefa a mais que a
+abordagem fim a fim, com custo próximo: cerca de 2\% a mais de tokens de raciocínio e 7\% a
+mais de tempo. Os tokens de raciocínio dominam o custo nas duas abordagens e superam em mais
+de cinco vezes os de entrada. Na geração de código, o programa acertou todos os exemplos de
+treino em 18 tarefas, e todas elas também acertaram o teste. Assim, acertar o treino foi um
+bom sinal de acerto no teste neste conjunto.
+
+As abordagens erraram tarefas diferentes. A abordagem fim a fim errou c658a4bd, d47aa2ff e
+f5aa3634; a geração de código errou 32597951 e f5aa3634. Juntas, elas cobririam 19 das 20
+tarefas. Também observamos variação entre execuções: em outra rodada completa, a abordagem fim
+a fim também resolveu 17 tarefas, mas não exatamente as mesmas.
+
+\paragraph{Exemplo de acerto (3aa6fb7a).} A grade tem formas de cor 8 com três células em um
+quadrado 2$\times$2, e a saída pinta de cor 1 a célula vazia de cada quadrado. As duas
+abordagens acertaram. A abordagem fim a fim descreveu a regra como ``para cada grupo de três
+células 8 em forma de L, colocar 1 no canto que falta''. O programa gerado usa a função
+\texttt{label} do SciPy para achar cada componente da cor 8, calcula o retângulo que o
+contém e pinta de 1 as células vazias desse retângulo. O programa acertou os dois exemplos de
+treino e o teste.
+
+\paragraph{Exemplo de erro (f5aa3634).} A entrada tem vários objetos pequenos, e a saída é o
+recorte do objeto que aparece mais de uma vez. As duas abordagens erraram. Na abordagem fim a
+fim, o modelo inferiu uma regra diferente (``o bloco indicado pelas formas marcadoras à
+esquerda'') e devolveu uma grade 3$\times$3, enquanto a resposta tem 4$\times$3. Na geração de
+código, o programa acertou dois dos três exemplos de treino e errou o teste. É a tarefa com
+mais tokens de raciocínio na geração de código (21.829): o modelo gastou mais e não achou a
+regra. Nesse caso, o erro no treino já indicava que o programa não era confiável.
+
+\section{Conclusão}
+
+Com o Gemini 3.5 Flash Lite e raciocínio alto, a geração de código foi a melhor abordagem:
+resolveu 18 das 20 tarefas, contra 17 na abordagem fim a fim, a um custo semelhante em tokens
+(cerca de 248 mil contra 242 mil no total) e em tempo. Além do acerto, a geração de código tem
+uma vantagem prática: o resultado no treino indica quando a resposta é confiável. Como as
+abordagens erram tarefas diferentes, um próximo passo natural é corrigir o programa com o erro
+dos exemplos de treino (nível 3) ou combinar as duas respostas.
+
+O solver foi construído com o agente de codificação Claude Code, que também ajudou a revisar
+os resultados e a redigir este relatório; os números foram conferidos com os resumos da pasta
+\texttt{resultados/}.
+
+%% The file named.bst is a bibliography style file for BibTeX 0.99c
+\bibliographystyle{named}
+\bibliography{referencias}
+
+\end{document}

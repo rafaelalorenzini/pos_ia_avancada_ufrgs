@@ -1,0 +1,4 @@
+```json
+{"rule_summary": "Extract the bounding box that contains all the non-zero cells in the input grid.",
+ "test_outputs": [[[0, 0, 6, 6, 6, 6], [0, 0, 6, 0, 0, 0], [6, 0, 6, 0, 0, 0], [6, 6, 6, 6, 0, 0]]]}
+```

@@ -1,0 +1,119 @@
+{
+  "rule_summary": "Extract the colored shapes from the input grid, order them from largest to smallest by size, and assemble them into a concentric nested square grid where each shape forms a hollow border from outer to inner, with the smallest shape at the center.",
+  "test_outputs": [
+    [
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        8,
+        8,
+        8,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        4,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        2,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        4,
+        4,
+        4,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8,
+        8,
+        8,
+        8,
+        8,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ]
+  ],
+  "task_id": "c658a4bd",
+  "set": "evaluation",
+  "correct": false,
+  "tests_correct": [
+    false
+  ],
+  "tokens": {
+    "input": 2023,
+    "reasoning": 9326,
+    "output": 306
+  },
+  "seconds": 24.8,
+  "error": null
+}

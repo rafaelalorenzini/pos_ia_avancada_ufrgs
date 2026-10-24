@@ -1,0 +1,8 @@
+import numpy as np
+
+def transform(grid):
+    grid = np.array(grid)
+    rows, cols = np.where(grid != 0)
+    min_r, max_r = rows.min(), rows.max()
+    min_c, max_c = cols.min(), cols.max()
+    return grid[min_r:max_r+1, min_c:max_c+1].tolist()

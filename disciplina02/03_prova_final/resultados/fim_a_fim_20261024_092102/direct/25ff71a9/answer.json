@@ -1,0 +1,53 @@
+{
+  "rule_summary": "Shift all non-zero colored pixels down by one row.",
+  "test_outputs": [
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ]
+  ],
+  "task_id": "25ff71a9",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true,
+    true
+  ],
+  "tokens": {
+    "input": 371,
+    "reasoning": 984,
+    "output": 84
+  },
+  "seconds": 7.1,
+  "error": null
+}

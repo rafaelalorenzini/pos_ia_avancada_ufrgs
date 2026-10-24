@@ -1,0 +1,51 @@
+{
+  "test_outputs": [
+    [
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        6,
+        6,
+        0
+      ]
+    ]
+  ],
+  "task_id": "7c9b52a0",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2352,
+    "reasoning": 14155,
+    "output": 289
+  },
+  "seconds": 37.5,
+  "error": null,
+  "train_correct": [
+    true,
+    true,
+    true
+  ],
+  "train_all_correct": true,
+  "run_errors": []
+}

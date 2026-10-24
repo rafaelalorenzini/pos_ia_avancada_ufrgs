@@ -1,0 +1,63 @@
+You are solving an ARC-AGI puzzle.
+Each grid is a matrix of integers from 0 to 9; each number is a color.
+Study the training examples and find the single transformation rule that
+turns every input into its output.
+
+## Training example 1
+Input:
+1 1 1
+0 0 0
+0 0 0
+Output:
+0 0 0
+1 1 1
+0 0 0
+
+## Training example 2
+Input:
+0 0 0
+1 1 1
+0 0 0
+Output:
+0 0 0
+0 0 0
+1 1 1
+
+## Training example 3
+Input:
+0 1 0
+1 1 0
+0 0 0
+Output:
+0 0 0
+0 1 0
+1 1 0
+
+## Training example 4
+Input:
+0 2 2
+0 0 2
+0 0 0
+Output:
+0 0 0
+0 2 2
+0 0 2
+
+## Test input 1
+2 0 0
+2 0 0
+0 0 0
+
+## Test input 2
+0 0 0
+0 1 0
+0 0 0
+
+## Task
+Apply the rule to the test input(s).
+
+## Answer format
+Reply with only a JSON object and nothing else:
+{"rule_summary": "<one or two sentences describing the rule>",
+ "test_outputs": [<output grid for test input 1>, ...]}
+Each output grid is a list of rows; each row is a list of integers.

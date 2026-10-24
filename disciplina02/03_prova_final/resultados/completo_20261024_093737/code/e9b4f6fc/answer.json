@@ -1,0 +1,29 @@
+{
+  "test_outputs": [
+    null
+  ],
+  "task_id": "e9b4f6fc",
+  "set": "evaluation",
+  "correct": false,
+  "tests_correct": [
+    false
+  ],
+  "tokens": {
+    "input": 2166,
+    "reasoning": 12763,
+    "output": 760
+  },
+  "seconds": 32.6,
+  "error": null,
+  "train_correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "train_all_correct": false,
+  "run_errors": [
+    "train 4: TypeError: cannot unpack non-iterable NoneType object",
+    "test 1: TypeError: cannot unpack non-iterable NoneType object"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rule_summary": "Split the 6-row input into two 3-row blocks, then construct the 9-row output by repeating the blocks in the order: block 1, block 2, block 1, while changing all color 1 to color 2.",
+  "test_outputs": [
+    [
+      [2, 2, 2],
+      [0, 2, 0],
+      [0, 2, 0],
+      [2, 2, 2],
+      [0, 2, 0],
+      [0, 2, 0],
+      [2, 2, 2],
+      [0, 2, 0],
+      [0, 2, 0]
+    ]
+  ]
+}

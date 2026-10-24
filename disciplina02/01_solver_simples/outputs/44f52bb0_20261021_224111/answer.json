@@ -1,0 +1,15 @@
+{
+  "rule_summary": "Check if the grid is symmetric across the vertical center column (leftmost column equals rightmost column). If it is symmetric, output 1; otherwise, output 7.",
+  "test_outputs": [
+    [
+      [
+        1
+      ]
+    ],
+    [
+      [
+        7
+      ]
+    ]
+  ]
+}

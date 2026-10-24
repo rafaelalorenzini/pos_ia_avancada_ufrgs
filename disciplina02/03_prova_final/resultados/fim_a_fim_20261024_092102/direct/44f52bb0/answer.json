@@ -1,0 +1,29 @@
+{
+  "rule_summary": "Check if the input grid has reflectional symmetry along its horizontal or vertical axes. If it is symmetric, the output is 1; otherwise, the output is 7.",
+  "test_outputs": [
+    [
+      [
+        1
+      ]
+    ],
+    [
+      [
+        7
+      ]
+    ]
+  ],
+  "task_id": "44f52bb0",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true,
+    true
+  ],
+  "tokens": {
+    "input": 371,
+    "reasoning": 5023,
+    "output": 72
+  },
+  "seconds": 17.5,
+  "error": null
+}

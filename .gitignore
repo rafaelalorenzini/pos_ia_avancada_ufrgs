@@ -1,0 +1,22 @@
+# Chaves de API: nunca vão para o repositório (use .env.example como modelo)
+.env
+
+# Ambientes e caches do Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

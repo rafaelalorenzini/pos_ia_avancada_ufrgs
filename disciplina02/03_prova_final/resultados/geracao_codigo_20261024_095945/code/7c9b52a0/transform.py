@@ -1,0 +1,29 @@
+import numpy as np
+from scipy.ndimage import label
+
+def transform(input_grid):
+    grid = np.array(input_grid)
+    bg = grid[0, 0]
+    
+    mask = (grid != bg)
+    labeled, num_features = label(mask)
+    
+    subgrids = []
+    for i in range(1, num_features + 1):
+        r_indices, c_indices = np.where(labeled == i)
+        min_r, max_r = r_indices.min(), r_indices.max()
+        min_c, max_c = c_indices.min(), c_indices.max()
+        subgrid = grid[min_r:max_r+1, min_c:max_c+1]
+        subgrids.append(subgrid)
+        
+    H, W = subgrids[0].shape
+    output = np.zeros((H, W), dtype=int)
+    
+    for sg in subgrids:
+        for r in range(H):
+            for c in range(W):
+                val = sg[r, c]
+                if val != 0:
+                    output[r, c] = val
+                    
+    return output.tolist()

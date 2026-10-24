@@ -1,0 +1,68 @@
+{
+  "rule_summary": "Locate pairs of 2x2 blocks of 8s on the same rows, extract the rectangular regions between each pair, and stack them vertically to form the output.",
+  "test_outputs": [
+    [
+      [
+        4,
+        1,
+        5,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        5,
+        9,
+        0,
+        4
+      ],
+      [
+        7,
+        7,
+        0,
+        0
+      ],
+      [
+        4,
+        5,
+        4,
+        3
+      ],
+      [
+        0,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        4
+      ]
+    ]
+  ],
+  "task_id": "aab50785",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2737,
+    "reasoning": 11190,
+    "output": 149
+  },
+  "seconds": 24.5,
+  "error": null
+}

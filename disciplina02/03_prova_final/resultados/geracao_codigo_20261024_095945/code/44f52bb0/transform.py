@@ -1,0 +1,11 @@
+def transform(grid):
+    def is_h_sym(g):
+        return all(row == row[::-1] for row in g)
+
+    def is_v_sym(g):
+        return g == g[::-1]
+
+    if is_h_sym(grid) or is_v_sym(grid):
+        return [[1]]
+    else:
+        return [[7]]

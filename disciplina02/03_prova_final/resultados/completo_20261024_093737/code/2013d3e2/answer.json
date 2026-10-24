@@ -1,0 +1,40 @@
+{
+  "test_outputs": [
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        8,
+        8,
+        3
+      ]
+    ]
+  ],
+  "task_id": "2013d3e2",
+  "set": "training",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 830,
+    "reasoning": 6736,
+    "output": 131
+  },
+  "seconds": 21.4,
+  "error": null,
+  "train_correct": [
+    true,
+    true
+  ],
+  "train_all_correct": true,
+  "run_errors": []
+}

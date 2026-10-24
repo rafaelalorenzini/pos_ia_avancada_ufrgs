@@ -1,0 +1,92 @@
+{
+  "rule_summary": "Identify all 4x4 shapes of color 6 and their associated nearby marker digits. Extract each 4x4 subgrid, replace the 6s with the marker digit, and arrange the resulting blocks either horizontally (if column intervals are disjoint) or vertically (if row intervals are disjoint).",
+  "test_outputs": [
+    [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        7,
+        7
+      ],
+      [
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        7,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        3,
+        0
+      ]
+    ]
+  ],
+  "task_id": "50aad11f",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 1849,
+    "reasoning": 10724,
+    "output": 223
+  },
+  "seconds": 28.2,
+  "error": null
+}

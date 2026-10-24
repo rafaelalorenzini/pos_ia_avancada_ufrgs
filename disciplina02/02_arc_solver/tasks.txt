@@ -1,0 +1,7 @@
+# One task per line: a task id (searched in ../data/training and ../data/evaluation)
+# or a path to a task JSON file. Blank lines and lines starting with # are ignored.
+007bbfb7
+00d62c1b
+017c7c7b
+025d127b
+045e512c

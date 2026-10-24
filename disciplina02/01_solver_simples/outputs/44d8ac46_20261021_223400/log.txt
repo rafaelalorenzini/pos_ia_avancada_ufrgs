@@ -1,0 +1,13 @@
+task:            data\training\44d8ac46.json
+provider:        google
+model:           gemma-4-31b-it
+reasoning level: high
+started:         2026-10-21T22:34:00
+duration:        274.2 s
+tokens:          {'prompt': 2773, 'thinking': 7575, 'output': 486}
+parse:           ok
+
+----- raw model reply -----
+```json
+{"rule_summary": "Identify rectangles formed by color 5 that contain a hole of color 0. If the hole is a square (including 1x1 squares), fill it with color 2.", "test_outputs": [[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [5, 5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 0], [5, 2, 2, 2, 5, 0, 0, 5, 5, 0, 5, 0], [5, 2, 2, 2, 5, 0, 0, 5, 0, 0, 5, 0], [5, 2, 2, 2, 5, 0, 0, 5, 0, 0, 5, 0], [5, 5, 5, 5, 5, 0, 0, 5, 5, 5, 5, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0], [0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0], [0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0], [0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0]]]}
+```

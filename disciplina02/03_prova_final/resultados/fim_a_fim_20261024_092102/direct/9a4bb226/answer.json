@@ -1,0 +1,35 @@
+{
+  "rule_summary": "Identify the 3x3 object in the input grid that contains three distinct colors (while the other 3x3 objects contain two), and output that object.",
+  "test_outputs": [
+    [
+      [
+        9,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ]
+  ],
+  "task_id": "9a4bb226",
+  "set": "evaluation",
+  "correct": true,
+  "tests_correct": [
+    true
+  ],
+  "tokens": {
+    "input": 2027,
+    "reasoning": 3008,
+    "output": 91
+  },
+  "seconds": 7.1,
+  "error": null
+}

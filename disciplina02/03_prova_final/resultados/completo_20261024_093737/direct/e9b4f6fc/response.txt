@@ -1,0 +1,3 @@
+```json
+{"rule_summary": "Extract the framed rectangular region and replace colors inside it based on the horizontal pairs of numbers located outside the region, where the second number in each pair is replaced by the first number.",
+ "test_outputs": [[[1, 1, 2, 1, 1], [1, 2, 2, 2, 1], [1, 4, 4, 4, 1], [1, 6, 6, 6, 1], [1, 1, 6, 1, 1], [1, 1, 1, 1, 1]]]}```
