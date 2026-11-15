@@ -1,0 +1,4 @@
+# Os dados derivados (data/*.parquet, metadados.json) e os do IBGE (data/ibge/) ficam versionados:
+# o app publicado no Streamlit Community Cloud lê direto deles (os zips brutos do TCE-RS não vão para o repositório).
+.venv/
+__pycache__/

@@ -1,0 +1,13 @@
+[project]
+name = "prova-final-licitacoes-tce-rs"
+version = "0.1.0"
+description = "Prova final da disciplina 03: amostragem, intervalos de confiança e testes de hipóteses nas licitações e contratos do TCE-RS"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "plotly>=5.24",
+    "pyarrow>=17",
+    "scipy>=1.14",
+    "streamlit>=1.40",
+]

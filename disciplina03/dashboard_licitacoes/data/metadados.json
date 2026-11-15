@@ -1,0 +1,18 @@
+{
+  "N": 305062,
+  "n": 2383,
+  "n0": 2400.9117629338284,
+  "n_exato": 2382.1713070881174,
+  "z": 1.959963984540054,
+  "confianca": 0.95,
+  "margem": 0.02,
+  "p_planejamento": 0.5,
+  "semente": 20261110,
+  "data_download": "10/11/2026",
+  "n_registros_contratos": 225004,
+  "n_registros_alteracoes": 80522,
+  "n_registros_licitantes": 531698,
+  "taxa_casamento_municipios": 1.0,
+  "orgaos_municipais_nao_casados": [],
+  "ultimo_mes_abertura": "2027-10-01"
+}
